@@ -1,0 +1,124 @@
+{
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "tp": 6,
+    "tn": 6,
+    "fp": 0,
+    "fn": 0
+  },
+  "roc_auc": 1.0,
+  "items": [
+    {
+      "name": "01_blog.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.123,
+      "pred": 0,
+      "verdict": "LIKELY HUMAN",
+      "layers": 0
+    },
+    {
+      "name": "02_technical.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.0784,
+      "pred": 0,
+      "verdict": "LIKELY HUMAN",
+      "layers": 0
+    },
+    {
+      "name": "03_review.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.0772,
+      "pred": 0,
+      "verdict": "LIKELY HUMAN",
+      "layers": 0
+    },
+    {
+      "name": "04_email.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.1062,
+      "pred": 0,
+      "verdict": "LIKELY HUMAN",
+      "layers": 0
+    },
+    {
+      "name": "05_essay.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.0962,
+      "pred": 0,
+      "verdict": "LIKELY HUMAN",
+      "layers": 0
+    },
+    {
+      "name": "06_forum.txt",
+      "label": 0,
+      "label_name": "human",
+      "prob": 0.283,
+      "pred": 0,
+      "verdict": "MIXED / INCONCLUSIVE",
+      "layers": 0
+    },
+    {
+      "name": "01_marketing.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.5939,
+      "pred": 1,
+      "verdict": "LIKELY AI",
+      "layers": 4
+    },
+    {
+      "name": "02_essay.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.5025,
+      "pred": 1,
+      "verdict": "MIXED / INCONCLUSIVE",
+      "layers": 2
+    },
+    {
+      "name": "03_explainer.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.7128,
+      "pred": 1,
+      "verdict": "LIKELY AI",
+      "layers": 5
+    },
+    {
+      "name": "04_tech.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.5549,
+      "pred": 1,
+      "verdict": "LIKELY AI",
+      "layers": 3
+    },
+    {
+      "name": "05_advice.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.5947,
+      "pred": 1,
+      "verdict": "LIKELY AI",
+      "layers": 4
+    },
+    {
+      "name": "06_summary.txt",
+      "label": 1,
+      "label_name": "ai",
+      "prob": 0.5256,
+      "pred": 1,
+      "verdict": "LIKELY AI",
+      "layers": 4
+    }
+  ]
+}
