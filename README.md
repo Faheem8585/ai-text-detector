@@ -9,8 +9,13 @@ too confident on obvious cases or too vague on edge ones, and I wanted
 to see how far a weighted ensemble of simple signals could go before
 needing a fine-tuned model.
 
-Current accuracy on my labelled set: **100% (12/12)**, AUC 1.00. See
-the `eval/` folder for the corpus and how to reproduce.
+On a small labelled set I put together (6 human + 6 AI, see `eval/`)
+it gets 12/12 right with AUC 1.00. That's a clean, easy benchmark —
+formal AI prose vs casual human writing separate cleanly, and the
+score would drop on adversarial paraphrased text. The numbers tell you
+the pipeline works end-to-end, not that the problem is solved.
+
+![scores](eval/charts/scores_by_sample.png)
 
 ## Stack
 
@@ -86,8 +91,14 @@ The first request triggers a one-time download of the MiniLM weights
 ## Validation
 
 ```bash
-python -m eval.validate
+python -m eval.validate     # runs scoring + metrics
+python -m eval.plot         # generates charts
 ```
+
+Charts and full per-sample breakdown live in [`eval/`](eval/README.md).
+
+![confusion matrix](eval/charts/confusion_matrix.png)
+![roc curve](eval/charts/roc_curve.png)
 
 Output on the included corpus (6 human + 6 AI samples, hand-curated
 from real writing and ChatGPT-4 output):
