@@ -1,0 +1,10 @@
+Hey Marcus,
+
+Quick one — I won't make the Thursday standup, dentist appointment that I keep moving because I am a coward. Should be back by lunch though.
+
+Re: the migration ticket, I think we should hold off until next sprint. The schema changes Priya flagged last Friday are still up in the air and if we ship now we'll just have to redo it. I know it's been sitting open forever and that's annoying, but rushing it will be worse.
+
+Also did anyone ever figure out who keeps eating my yoghurts from the fridge. Asking for a friend (the friend is me) (and also the yoghurts).
+
+Cheers,
+Sam

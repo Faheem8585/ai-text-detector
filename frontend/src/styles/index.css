@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body {
+    @apply bg-forensic-bg text-slate-200 font-mono antialiased;
+  }
+  ::selection { background: rgba(34, 211, 238, 0.3); color: #ecfeff; }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-slate-800 bg-forensic-panel/70 p-5;
+  }
+  .panel-title {
+    @apply text-[11px] uppercase text-slate-500 mb-3;
+  }
+  .btn-cyber {
+    @apply px-4 py-2 rounded-lg bg-cyan-500/10 border border-cyan-500/40
+           text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-400
+           transition disabled:opacity-40 disabled:cursor-not-allowed
+           text-sm;
+  }
+}
